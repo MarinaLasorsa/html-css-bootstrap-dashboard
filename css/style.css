@@ -1,0 +1,44 @@
+/*DEBUG*/
+
+.debug .container {
+	border: 1px solid mediumvioletred;
+}
+
+.debug .row {
+    border: 1px solid teal;
+}
+
+.debug .col {
+    border: 1px solid black;
+}
+
+.debug .col-auto {
+    border: 1px solid black;
+}
+
+.debug .app-header {
+    background-color: blueviolet;
+}
+
+/*LAYOUT*/
+
+#app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    height: 55px;
+    flex-shrink: 0;
+}
+
+.app-main {
+    flex-grow: 1;
+}
+
+/*HEADER*/
+
+.header-links {
+    display: flex;
+}
