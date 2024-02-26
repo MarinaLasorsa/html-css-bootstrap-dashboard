@@ -1,6 +1,6 @@
 /*DEBUG*/
 
-.debug .container {
+.debug .container, .debug .container-fluid {
 	border: 1px solid mediumvioletred;
 }
 
@@ -8,11 +8,7 @@
     border: 1px solid teal;
 }
 
-.debug .col {
-    border: 1px solid black;
-}
-
-.debug .col-auto {
+.debug .col, .debug .col-auto {
     border: 1px solid black;
 }
 
@@ -23,6 +19,10 @@
 .debug .app-menu {
     background-color: darkblue;
     color: white;
+}
+
+.debug .app-info {
+    background-color: lightseagreen;
 }
 
 /*LAYOUT*/
@@ -40,11 +40,18 @@
 
 .app-main {
     flex-grow: 1;
+    display: flex;
 }
 
 .app-menu {
   width: 70px;  
   height: 100%; 
+}
+
+.app-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 992px) {

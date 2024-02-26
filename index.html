@@ -11,7 +11,7 @@
 <body class="debug">
     <div id="app">
         <header class="app-header">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-auto">
                         <div class="d-lg-none">logo</div>
@@ -29,7 +29,7 @@
         </header>
         <main class="app-main">
             <div class="app-menu d-flex flex-column justify-content-between">
-                <ul class="col-auto list-unstyled m-0">
+                <ul class="list-unstyled m-0">
                     <li class="d-flex">
                         <span>icona</span>
                         <span class="d-none d-lg-inline">Home</span>
@@ -43,7 +43,7 @@
                         <span class="d-none d-lg-inline">Signals</span>
                     </li>
                 </ul>
-                <div class="col-auto d-flex">
+                <div class="d-flex">
                     <span>icona</span>
                     <span class="d-none d-lg-inline">Admin</span>
                 </div>
@@ -51,10 +51,18 @@
             <div class="app-content">
                 <div class="app-info">
                     <div class="container">
-                        <div class="row">
-                            <div class="col"></div>
-                            <div class="col"></div>
-                            <div class="col"></div>
+                        <div class="row row-cols-1 row-cols-md-3">
+                            <div class="col-lg-3 order-md-3">
+                                <span>Nuovo studente</span> <button>bottone</button>
+                            </div>
+                            <div class="col-lg-6 order-md-1">
+                                <span>Boolean</span> <span>label</span>
+                                <div>label</div>
+                            </div>
+                            <div class="col-lg-3 order-md-2">
+                                <span>studenti online</span>
+                                <div>125</div>
+                            </div>
                         </div>
                     </div>
                 </div>
