@@ -20,6 +20,11 @@
     background-color: blueviolet;
 }
 
+.debug .app-menu {
+    background-color: darkblue;
+    color: white;
+}
+
 /*LAYOUT*/
 
 #app {
@@ -35,6 +40,17 @@
 
 .app-main {
     flex-grow: 1;
+}
+
+.app-menu {
+  width: 70px;  
+  height: 100%; 
+}
+
+@media (min-width: 992px) {
+	.app-menu {
+		width: 150px;
+	}
 }
 
 /*HEADER*/
