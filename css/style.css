@@ -25,6 +25,10 @@
     background-color: lightseagreen;
 }
 
+.debug .app-components {
+    background-color: wheat;
+}
+
 /*LAYOUT*/
 
 #app {
@@ -52,6 +56,10 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+}
+
+.app-components {
+    flex-grow: 1;
 }
 
 @media (min-width: 992px) {
