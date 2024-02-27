@@ -95,7 +95,12 @@
     left: 12px;
 }
 
-/*SIDEBAR*/
+/*INFO BAR*/
+
+.app-info {
+    background-color: #1B72E8;
+    color: white;
+}
 
 
 
@@ -103,6 +108,10 @@
 
 .color-orange {
     color: #FF8F00;
+}
+
+.bg-color-blue {
+    background-color: #165BBA;
 }
 
 
