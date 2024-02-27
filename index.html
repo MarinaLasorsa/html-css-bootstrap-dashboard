@@ -54,7 +54,7 @@
                     <div class="container">
                         <div class="row row-cols-1 row-cols-md-3">
                             <div class="col-lg-3 order-md-3">
-                                <span class="me-3">Nuovo Studente</span><button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="NewStudentForm"><i class="fa-solid fa-plus"></i></button>
+                                <span class="me-3">Nuovo Studente</span><button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#NewStudentForm"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div class="col-lg-6 order-md-1 my-3 mt-md-0">
                                 <span class="fs-3">Boolean</span> <span class="badge rounded-pill bg-color-blue">Piano blaze</span> <br>
@@ -168,6 +168,69 @@
             </div>
         </main>
     </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="NewStudentForm">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="container">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <label for="StudentName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="StudentName">
+                    </div>
+                    <div class="col-6">
+                        <label for="StudentSurname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="StudentSurname">
+                    </div>
+                    <div class="col-6">
+                        <label for="StudentEmail" class="form-label">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="email" class="form-control" id="StudentEmail">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="StudentPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="StudentPassword">
+                    </div>
+                    <div class="col-12">
+                        <label for="StudentAddress" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="StudentAddress">
+                    </div>
+                    <div class="col-6">
+                        <label for="StudentCity" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="StudentCity">
+                    </div>
+                    <div class="col">
+                        <label for="StudentState" class="form-label">Stato</label>
+                        <select class="form-select" id="StudentState">
+                            <option selected>Scegli...</option>
+                            <option value="1">Italia</option>
+                            <option value="2">San Marino</option>
+                            <option value="3">Città del Vaticano</option>
+                          </select>
+                    </div>
+                    <div class="col-2">
+                        <label for="StudentCap" class="form-label">CAP</label>
+                        <input type="text" class="form-control" id="StudentCap">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="StudentPhoto" class="form-label">Foto</label>
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="StudentPhoto" aria-describedby="StudentPhoto" aria-label="Upload">
+                          </div>
+                    </div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="ConfirmationCheck">
+                    <label class="form-check-label" for="ConfirmationCheck">Seleziona per proseguire</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Salva</button> <button type="button" class="btn btn-warning">Svuota</button>
+            </form>
+        </div>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
 </body>
 </html>
